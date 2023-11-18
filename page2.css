@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital,wght@1,100;1,300&family=Sriracha&display=swap');
+*{
+	font-family: 'Itim', cursive;
+	font-size:30px;
+	margin: 0;
+    padding: 0;
+	line-height: 2.8rem;
+}
+.index{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #02000d;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	border: 0;
+	text-align: center;
+	overflow: hidden;
+}
+label{
+	color:#fff;
+}
+img{
+	width: 700px;
+	height: 700px;
+	
+}
+.text{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+p.effect{
+	white-space: pre;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color:#fff;
+}
+.choice a{
+	padding: 10px 40px;
+	font-size: 1rem;
+	text-decoration: none;
+	color: #fff;
+	left: 50px;
+}
+.choice a:hover{
+	color: #000;
+}
+.choice li:hover{
+	background-color:#B2FFF8;
+	border-radius: 25px;
+	border-color: #F8C826;
+	transition: 0.2s all linear;
+	transform: scale(1.3);
+	box-shadow: 0 0 5px 5px #B2FFF8;
+}
+/* ขยับตัวอักษร */
+span{
+	opacity: 0;
+	transition: all 0.4 ease;
+	transform: translateY(50px);
+
+}
+span.fade{
+	opacity: 1;
+	transform: translateY(0px);
+}

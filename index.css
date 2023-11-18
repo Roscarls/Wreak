@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital,wght@1,100;1,300&family=Sriracha&display=swap');
+*{
+	font-family: 'Itim', cursive;
+	font-size:60px;
+	margin: 0;
+    padding: 0;
+	line-height: 2.5rem;
+	overflow: hidden;
+}
+.index{
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(img/pastel.png);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	border: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+p{
+	white-space: pre;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+.test{
+	width: 30%; /* ปรับค่าตามที่ต้องการ */
+	margin: 0 auto; 
+}
+a{
+	padding:5px 20px;
+	border-radius:50px;
+	color:#fff;
+	text-decoration:none;
+	background-color:#000;
+	transition: all 0.4s ease;
+	/*margin-left: 900px;*/
+	
+}
+a:hover{
+	background-color:#DF95EF;
+	color:#000;
+}
+img.left{
+	position: absolute;
+	left: 0px;
+	top: 500px;
+	width: auto;
+	height: 500px;
+	transform-origin: left center;
+	animation: slidein 2s alternate infinite ease-in;
+}
+img.right{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: auto;
+	height: 500px;
+	transform-origin: right center;
+	animation: slideout 2s alternate infinite ease-in;
+}
+
+/* ขยับตัวอักษร */
+span{
+	opacity: 0;
+	transition: all 0.4 ease;
+	transform: translateY(50px);
+
+}
+span.fade{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+/* Animation */
+@keyframes slidein{
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideout{
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
